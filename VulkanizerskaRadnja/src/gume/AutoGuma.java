@@ -1,7 +1,7 @@
 package gume;
 
 /**
- * Klasa definise atribute i metode jedne Auto gume.
+ * Tip gume za automobile koji se koristi u vulkanizerskoj radnji.
  * 
  * @author Negra Hodzic
  * @version 0.1.0
@@ -9,26 +9,26 @@ package gume;
  */
 public class AutoGuma {
 	/**
-	 * Atribut marka modela kao string.
+	 * Marka modela gume
 	 */
 	private String markaModel = null;
 	/**
-	 * Atribut precnik celobrojnog tipa.
+	 * Precnik gume
 	 */
 	private int precnik = 0;
 	/**
-	 * Atribut sirina.
+	 * Sirina gume
 	 */
 	private int sirina = 0;
 	/**
-	 * Atribut visina.
+	 * Visina gume
 	 */
 	private int visina = 0;
 
 	/**
-	 * Vraca marku modela.
+	 * Vraca marku modela gume.
 	 * 
-	 * @return Marka modela.
+	 * @return Marka modela gume
 	 */
 	public String getMarkaModel() {
 		return markaModel;
@@ -37,7 +37,7 @@ public class AutoGuma {
 	/**
 	 * Postavlja marku modela na zadatu vrednost.
 	 * 
-	 * @param markaModel Marka modela kao string
+	 * @param markaModel Marka modela gume koju treba postaviti
 	 * @throws java.lang.RuntimeException Ako je uneta null vrednost ili ako je duzina stringa manja od 3
 	 */
 	public void setMarkaModel(String markaModel) {
@@ -58,7 +58,7 @@ public class AutoGuma {
 	/**
 	 * Postavlja precnik gume na zadatu vrednost.
 	 * 
-	 * @param precnik Precnik gume kao int
+	 * @param precnik Precnik gume koji treba postaviti
 	 * @throws java.lang.RuntimeException Ako precnik nije izmedju 13 i 22
 	 */
 	public void setPrecnik(int precnik) {
@@ -70,7 +70,7 @@ public class AutoGuma {
 	/**
 	 * Vraca sirinu gume.
 	 * 
-	 * @return sirina Sirina gume
+	 * @return Sirina gume
 	 */
 	public int getSirina() {
 		return sirina;
@@ -79,7 +79,7 @@ public class AutoGuma {
 	/**
 	 * Postavlja sirinu gume na zadatu vrednost.
 	 * 
-	 * @param sirina Sirina gume kao int
+	 * @param sirina Sirina gume koju treba postaviti
 	 * @throws java.lang.RuntimeException Ako nije izmedju 135 i 355
 	 */
 	public void setSirina(int sirina) {
@@ -100,7 +100,7 @@ public class AutoGuma {
 	/**
 	 * Postavlja visinu gume na zadatu vrednost.
 	 * 
-	 * @param visina Visina gume kao int
+	 * @param visina Visina gume koju treba postaviti
 	 * @throws java.lang.RuntimeException Ako je vece od 95 ili manje od 25
 	 */
 	public void setVisina(int visina) {
@@ -110,8 +110,9 @@ public class AutoGuma {
 	}
 
 	/**
-	 * Vraca sve atribute klase kao formatiran tekst.
-	 * @return Klasa AutoGuma kao formatiran tekst 
+	 * Vraca marku modela, precnik, sirinu i visinu gume kao formatiran tekst.
+	 * 
+	 * @return Formatiran tekst koji sadrzi marku modela, precnik, sirinu i visinu gume
 	 */
 	@Override
 	public String toString() {
