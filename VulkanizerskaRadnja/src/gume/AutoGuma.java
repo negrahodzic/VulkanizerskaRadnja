@@ -38,7 +38,11 @@ public class AutoGuma {
 	 * Postavlja marku modela na zadatu vrednost.
 	 * 
 	 * @param markaModel Marka modela gume koju treba postaviti
-	 * @throws java.lang.RuntimeException Ako je uneta null vrednost ili ako je duzina stringa manja od 3
+	 * @throws java.lang.RuntimeException Ako je uneta:
+	 *  <ul>
+	 *  	<li>null vrednost,</li> 
+	 *      <li>duzina marke modela manja od 3</li>
+	 *  </ul>
 	 */
 	public void setMarkaModel(String markaModel) {
 		if (markaModel == null || markaModel.length() < 3)
@@ -59,7 +63,11 @@ public class AutoGuma {
 	 * Postavlja precnik gume na zadatu vrednost.
 	 * 
 	 * @param precnik Precnik gume koji treba postaviti
-	 * @throws java.lang.RuntimeException Ako precnik nije izmedju 13 i 22
+	 * @throws java.lang.RuntimeException Ako je precnik:
+	 *  <ul>
+	 *  	<li>manji od 13</li> 
+	 *      <li>veci od 22</li>
+	 *  </ul>
 	 */
 	public void setPrecnik(int precnik) {
 		if (precnik < 13 || precnik > 22)
@@ -80,7 +88,11 @@ public class AutoGuma {
 	 * Postavlja sirinu gume na zadatu vrednost.
 	 * 
 	 * @param sirina Sirina gume koju treba postaviti
-	 * @throws java.lang.RuntimeException Ako nije izmedju 135 i 355
+	 * @throws java.lang.RuntimeException Ako je sirina:
+	 *  <ul>
+	 *  	<li>manja od 135</li> 
+	 *      <li>veca od 355</li>
+	 *  </ul>
 	 */
 	public void setSirina(int sirina) {
 		if (sirina < 135 || sirina > 355)
@@ -101,7 +113,11 @@ public class AutoGuma {
 	 * Postavlja visinu gume na zadatu vrednost.
 	 * 
 	 * @param visina Visina gume koju treba postaviti
-	 * @throws java.lang.RuntimeException Ako je vece od 95 ili manje od 25
+	 * @throws java.lang.RuntimeException Ako je visina:
+	 *  <ul>
+	 *  	<li>manja od 25</li> 
+	 *      <li>veca od 95</li>
+	 *  </ul>
 	 */
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
